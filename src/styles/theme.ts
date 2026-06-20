@@ -1,0 +1,55 @@
+// src/styles/theme.ts
+export const theme = {
+  colors: {
+    primary: '#0F172A',
+    secondary: '#1E293B',
+    card: '#1E293B',
+    border: '#334155',
+    accent: '#2563EB',
+    accentLight: '#3B82F6',
+    danger: '#EF4444',
+    dangerDark: '#B91C1C',
+    warning: '#FACC15',
+    success: '#22C55E',
+    successDark: '#16A34A',
+    text: '#F1F5F9',
+    textSecondary: '#94A3B8',
+    textMuted: '#64748B',
+    white: '#FFFFFF',
+    black: '#000000',
+    overlay: 'rgba(0,0,0,0.6)',
+  },
+  spacing: {
+    xs: 4,
+    sm: 8,
+    md: 16,
+    lg: 24,
+    xl: 32,
+    xxl: 48,
+  },
+  borderRadius: {
+    sm: 6,
+    md: 12,
+    lg: 16,
+    xl: 24,
+    full: 9999,
+  },
+  fontSize: {
+    xs: 11,
+    sm: 13,
+    md: 15,
+    lg: 18,
+    xl: 22,
+    xxl: 28,
+    xxxl: 36,
+  },
+  fontWeight: {
+    normal: '400' as const,
+    medium: '500' as const,
+    semibold: '600' as const,
+    bold: '700' as const,
+    extrabold: '800' as const,
+  },
+};
+
+export type Theme = typeof theme;
